@@ -8,8 +8,7 @@ class Topic < ApplicationRecord
   belongs_to :user
   has_many :topics
   mount_uploader :image, ImageUploader
-    # file_size: {
-    #   maximum: 10.megabytes.to_i # 最大10MBに制限
-    # }
+
     has_many :favorites
+    has_many :favorite_users, through: :favorites, source: 'user'
 end
