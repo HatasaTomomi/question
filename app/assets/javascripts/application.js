@@ -12,11 +12,6 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery
 //= require turbolinks
 //= require_tree .
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# この行を追加する
-gem 'bootstrap-sass'
-//= require jquery
